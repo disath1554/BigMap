@@ -52,8 +52,8 @@ def get_degree_size(toponym_to_find):
                      toponym["boundedBy"]["Envelope"]["lowerCorner"].split())
         x2, y2 = map(float,
                      toponym["boundedBy"]["Envelope"]["upperCorner"].split())
-        return str(abs(x1 - x2)), str(abs(y1 - y2))
-    return None
+        return abs(x1 - x2), str(abs(y1 - y2)
+    return None, None
  
 # Показать карту (pygame)
 def show_map_pygame(params):
